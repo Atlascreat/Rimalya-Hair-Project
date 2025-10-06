@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimalya - Boutique en ligne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="rimalaya.png" alt="Rimalaya Logo" class="nav-logo">
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+                               
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Découvrez notre collection exclusive</h1>
+            <p class="hero-subtitle">Des produits uniques et de qualité pour votre style</p>
+                            <a href="produits.html" class="cta-btn">Voir nos produits</a>
+        </div>
+    </section>
+
+    <!-- Vision Banner -->
+    <section class="vision-banner">
+        <div class="container">
+            <div class="vision-content">
+                <div class="vision-text">
+                    <h2 class="vision-title">Notre Vision</h2>
+                    <p class="vision-description">
+                        Rimalya Hair est née d'une vision simple mais puissante : offrir aux femmes une routine de soins capillaires luxueuse, sans compromis entre naturalité, efficacité et esthétique. Chaque formule a été conçue pour répondre aux besoins des cheveux modernes - abîmés, fatigués, assoiffés - tout en apportant soin, douceur et brillance, dans une atmosphère chic et apaisante.
+                    </p>
+                </div>
+                <div class="vision-decoration">
+                    <div class="decoration-circle"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À propos de Rimalya</h2>
+                    <p>Rimalya est née d'un simple besoin d'offrir des soins capillaires haut-de-gamme sans compromis, adapté à tout type de cheveux naturels, lisses, bouclés, ondulés ou crépus. Nos formules enrichi à 98 % d'ingrédient naturel d'origine naturelle sont sans sulfate sans silicone et sans part à Ben et respectueuse de la fibre capillaire du cuir chevelu et de la planète, notre ambition, proposer une routine efficace, scène et sensoriel pour les femmes et les enfants sans distinction de texture, ni de style rima. C'est plus qu'une marque. C'est une expérience bien-être et une valeur de transmission et de fierté capillaire assurée végane 🌱 non testée sur les animaux</p>
+                </div>
+                <div class="about-image">
+                    <img src="rimalaya.png" alt="Rimalaya" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>rimalyahair@hotmail.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Panier</h3>
+                <button class="close-btn" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">0.00 €</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rimalya</h3>
+                    <p>Votre boutique de confiance pour des produits de qualité.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rimalaya. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
